@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <title>
+    
+      EOS RAM Fees and BP Reward &middot; miscentralized
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+
+  <!-- RSS -->
+  <link type="application/atom+xml" rel="alternate" href="miscentralized.com/feed.xml" title="miscentralized" />
+</head>
+
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">miscentralized</h2>
+        </a>
+        <ul>
+          <li><a href="/">Posts</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="post">
+  <div class="post-info">
+    <span>Written by</span>
+    
+        miscentralized
+    
+
+    
+      <br>
+      <span>on&nbsp;</span><time datetime="2018-07-29 00:00:00 +0100">July 29, 2018</time>
+    
+  </div>
+
+  <h1 class="post-title">EOS RAM Fees and BP Reward</h1>
+  <div class="post-line"></div>
+
+  <h1 id="introduction">Introduction</h1>
+
+<h2 id="ram">RAM</h2>
+
+<p>As you may know, when trading RAM on EOSIO you incur a rather large transaction fee. In this scenario, the EOS paid for RAM fees goes to an account named <code class="highlighter-rouge">eosio.ramfee</code>. While it’s still uncertain where that EOS will end up, for now, those tokens are out of circulation, thus offering a mechanism alike <em>monetary deflation</em>.</p>
+
+<h2 id="bps-reward">BPs reward</h2>
+
+<p>Similarly, block producers (BPs) are rewarded for their services to EOS. BPs are rewarded both for producing blocks (by <code class="highlighter-rouge">eosio.bpay</code>; only <em>active</em> BPs) and for winning the hearts and votes of the community (by <code class="highlighter-rouge">eosio.vpay</code>; both <em>active</em> and <em>inactive</em> BPs). To be paid, new tokens are created, thus introducing a mechanism akin to <em>monetary inflation</em>.</p>
+
+<h2 id="inflationary-or-deflationary">Inflationary or Deflationary</h2>
+
+<p>Then, the question is–who outpaces whom? Are RAM traders and users locking up more tokens than BPs are rewarded for their services? To check out the historical evolution of those mechanisms, I analysed all transactions related to those accounts and looked at them together from the launch of EOS mainnet.
+l</p>
+<h1 id="data">Data</h1>
+
+<h2 id="chart">Chart</h2>
+
+<p><img src="/assets/images/ram_bp.png" alt="chart" />
+<em>Graph above shows that the EOS created to pay BPs has been offset by RAM fees so far</em></p>
+
+<h2 id="discussion">Discussion</h2>
+
+<p>As you can see, there has been an uncanny tendency of those two mechanisms to converge to the same cumulative number of EOS. In other words, the amount of EOS created to reward BPs has been matched by the number of EOS taken out of circulation from RAM trading.</p>
+
+<p>On the other hand, the fate of EOS stuck in <code class="highlighter-rouge">eosio.fee</code> is undecided, so the EOS may be reintroduced in circulation to fund various community projects. This would be advantageous to holders if the projects that are funded with that EOS supply increases the demand for EOS enough to exceed the excess supply. Conversely, if EOS was simply burned, then, assuming demand and all other things stay equal, the price should increase to satisfy the same demand with a lower supply.</p>
+
+<h1 id="end">End</h1>
+
+<h2 id="fun-facts">“Fun” facts</h2>
+
+<ul>
+  <li>Someone paid <a href="https://eospark.com/MainNet/tx/a31bda0e223ce37450a3cd375eff130af5ca4801e2c8c89f1aa8fe5951032232">4,000 EOS</a> in RAM transaction fees in one transaction of 80,000 EOS;</li>
+  <li>The arithmetic mean of EOS paid for fees is about 3.5 EOS while the median is only 0.2 EOS, as the mean is skewed by large trades;</li>
+  <li>Only about 8% of EOS accounts paid ramfees</li>
+</ul>
+
+<h2 id="notes">Notes</h2>
+
+<p>Plese note that there are other forces at play in EOS, and accounts such as <code class="highlighter-rouge">eosio.saving</code> and <code class="highlighter-rouge">eosio.names</code> are also stacking up on EOS for rainy days. Therefore, this post does not look at all mechanisms that affect the circulating supply of EOS.</p>
+
+
+</div>
+
+<div class="pagination">
+  
+  
+
+</div>
+
+    </main>
+
+    <footer>
+      <span>
+        <time datetime="2018-07-29 13:46:44 +0100">2018</time> miscentralized.
+      </span>
+    </footer>
+  </body>
+</html>
