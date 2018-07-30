@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="miscentralized.com/feed.xml" rel="self" type="application/atom+xml" /><link href="miscentralized.com/" rel="alternate" type="text/html" /><updated>2018-07-29T13:46:44+01:00</updated><id>miscentralized.com/</id><title type="html">miscentralized</title><subtitle>as we remain centralized</subtitle><author><name>miscentralized</name><email>miscentralized@gmail.com</email></author><entry><title type="html">EOS RAM Fees and BP Reward</title><link href="miscentralized.com/2018/ramfee-vs-bp-reward" rel="alternate" type="text/html" title="EOS RAM Fees and BP Reward" /><published>2018-07-29T00:00:00+01:00</published><updated>2018-07-29T00:00:00+01:00</updated><id>miscentralized.com/2018/ramfee-vs-bp-reward</id><content type="html" xml:base="miscentralized.com/2018/ramfee-vs-bp-reward">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="miscentralized.com/feed.xml" rel="self" type="application/atom+xml" /><link href="miscentralized.com/" rel="alternate" type="text/html" /><updated>2018-07-30T22:28:59+01:00</updated><id>miscentralized.com/</id><title type="html">miscentralized</title><author><name>miscentralized</name><email>miscentralized@gmail.com</email></author><entry><title type="html">EOS RAM Fees and BP Reward</title><link href="miscentralized.com/2018/ramfee-vs-bp-reward" rel="alternate" type="text/html" title="EOS RAM Fees and BP Reward" /><published>2018-07-29T00:00:00+01:00</published><updated>2018-07-29T00:00:00+01:00</updated><id>miscentralized.com/2018/ramfee-vs-bp-reward</id><content type="html" xml:base="miscentralized.com/2018/ramfee-vs-bp-reward">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;h2 id=&quot;ram&quot;&gt;RAM&lt;/h2&gt;
 
@@ -6,35 +6,80 @@
 
 &lt;h2 id=&quot;bps-reward&quot;&gt;BPs reward&lt;/h2&gt;
 
-&lt;p&gt;Similarly, block producers (BPs) are rewarded for their services to EOS. BPs are rewarded both for producing blocks (by &lt;code class=&quot;highlighter-rouge&quot;&gt;eosio.bpay&lt;/code&gt;; only &lt;em&gt;active&lt;/em&gt; BPs) and for winning the hearts and votes of the community (by &lt;code class=&quot;highlighter-rouge&quot;&gt;eosio.vpay&lt;/code&gt;; both &lt;em&gt;active&lt;/em&gt; and &lt;em&gt;inactive&lt;/em&gt; BPs). To be paid, new tokens are created, thus introducing a mechanism akin to &lt;em&gt;monetary inflation&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Similarly, block producers (BPs) are rewarded for their services to EOS. BPs are rewarded both for producing blocks (block rewards) and for winning the hearts and votes of the community (vote rewards.) To be paid, new tokens are created, thus introducing a mechanism akin to &lt;em&gt;monetary inflation&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;inflationary-or-deflationary&quot;&gt;Inflationary or Deflationary&lt;/h2&gt;
 
-&lt;p&gt;Then, the question is–who outpaces whom? Are RAM traders and users locking up more tokens than BPs are rewarded for their services? To check out the historical evolution of those mechanisms, I analysed all transactions related to those accounts and looked at them together from the launch of EOS mainnet.
-l&lt;/p&gt;
+&lt;p&gt;Then, the question is–who outpaces whom? Are RAM traders and users locking up more tokens than BPs are rewarded for their services? To check out the historical evolution of those mechanisms, I analysed all transactions related to those accounts and looked at them together from the launch of EOS mainnet.&lt;/p&gt;
+
 &lt;h1 id=&quot;data&quot;&gt;Data&lt;/h1&gt;
 
 &lt;h2 id=&quot;chart&quot;&gt;Chart&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/ram_bp.png&quot; alt=&quot;chart&quot; /&gt;
-&lt;em&gt;Graph above shows that the EOS created to pay BPs has been offset by RAM fees so far&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Figure above shows that the EOS created to pay BPs has been offset by RAM fees so far.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;discussion&quot;&gt;Discussion&lt;/h2&gt;
 
 &lt;p&gt;As you can see, there has been an uncanny tendency of those two mechanisms to converge to the same cumulative number of EOS. In other words, the amount of EOS created to reward BPs has been matched by the number of EOS taken out of circulation from RAM trading.&lt;/p&gt;
 
-&lt;p&gt;On the other hand, the fate of EOS stuck in &lt;code class=&quot;highlighter-rouge&quot;&gt;eosio.fee&lt;/code&gt; is undecided, so the EOS may be reintroduced in circulation to fund various community projects. This would be advantageous to holders if the projects that are funded with that EOS supply increases the demand for EOS enough to exceed the excess supply. Conversely, if EOS was simply burned, then, assuming demand and all other things stay equal, the price should increase to satisfy the same demand with a lower supply.&lt;/p&gt;
+&lt;p&gt;On the other hand, the fate of EOS stuck in &lt;code class=&quot;highlighter-rouge&quot;&gt;eosio.ramfee&lt;/code&gt; is undecided, but there are several proposals considered. Below, I present how holders are impacted depending on how the ram fees are distributed, assuming (almost) everything else equal:&lt;/p&gt;
+
+&lt;table class=&quot;mbtablestyle&quot;&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Mechanism&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Wealth for holders&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Effect on wealth inequality&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Possible&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Funding successful¹ projects&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:green&quot;&gt;↑&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;-&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:green&quot;&gt;✓&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Funding unsuccessful¹ projects&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:red&quot;&gt;↓&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;-&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:green&quot;&gt;✓&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Burning tokens&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:green&quot;&gt;↑&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:red&quot;&gt;↑&lt;/strong&gt;²&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:green&quot;&gt;✓&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Distributing tokens uniformly&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:green&quot;&gt;↑&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:green&quot;&gt;↓&lt;/strong&gt;²&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:red&quot;&gt;✗&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Distributing tokens proportional to wealth&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:green&quot;&gt;↑&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;-&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong style=&quot;color:green&quot;&gt;✓&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;¹ Successful projects accelerate the increase in demand while unsuccessful projects do not.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;² Decreasing/increasing wealth inequality is not necessarilly bad/good despite being colour coded red/green&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;end&quot;&gt;End&lt;/h1&gt;
 
-&lt;h2 id=&quot;fun-facts&quot;&gt;“Fun” facts&lt;/h2&gt;
+&lt;h2 id=&quot;fun-facts&quot;&gt;Fun facts&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Someone paid &lt;a href=&quot;https://eospark.com/MainNet/tx/a31bda0e223ce37450a3cd375eff130af5ca4801e2c8c89f1aa8fe5951032232&quot;&gt;4,000 EOS&lt;/a&gt; in RAM transaction fees in one transaction of 80,000 EOS;&lt;/li&gt;
+  &lt;li&gt;Someone paid 4,000 EOS in RAM transaction fees in &lt;a href=&quot;https://eospark.com/MainNet/tx/a31bda0e223ce37450a3cd375eff130af5ca4801e2c8c89f1aa8fe5951032232&quot;&gt;one transaction&lt;/a&gt; of 800,000 EOS;&lt;/li&gt;
   &lt;li&gt;The arithmetic mean of EOS paid for fees is about 3.5 EOS while the median is only 0.2 EOS, as the mean is skewed by large trades;&lt;/li&gt;
   &lt;li&gt;Only about 8% of EOS accounts paid ramfees&lt;/li&gt;
+  &lt;li&gt;11 accounts paid more than 10,000 EOS each for ramfees (one, however, is chainceonram, which is known to be associated with an exchange.)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
 
-&lt;p&gt;Plese note that there are other forces at play in EOS, and accounts such as &lt;code class=&quot;highlighter-rouge&quot;&gt;eosio.saving&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;eosio.names&lt;/code&gt; are also stacking up on EOS for rainy days. Therefore, this post does not look at all mechanisms that affect the circulating supply of EOS.&lt;/p&gt;</content><author><name>miscentralized</name></author><summary type="html">Introduction</summary></entry></feed>
+&lt;p&gt;Plese note that there are other forces at play in EOS, and accounts such as &lt;code class=&quot;highlighter-rouge&quot;&gt;eosio.saving&lt;/code&gt; are also stacking up on EOS for rainy days. Therefore, this post does not look at all mechanisms that affect the circulating supply of EOS.&lt;/p&gt;</content><author><name>miscentralized</name></author><summary type="html">Introduction</summary></entry></feed>
